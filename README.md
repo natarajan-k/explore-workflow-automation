@@ -17,6 +17,10 @@ Look for the following plugins and enable them if they are not enabled. Refer to
 ![](./images/image1.jpg)
 
 List Of Plugins.   
+-  LocalFileWatcher   
+- LocalFileOperation
+- FileArchivingOperation
+- AscpClient
 
 
 ## Create WorkFlow
@@ -25,9 +29,9 @@ We are going to create a Workflow that will:
 - Create a folder with your prefix as a working directory
 - Copy the detected file to the sub folder created.
 - compress the file
-- transfer the file using ascp to a HSTS server
-- delete the copied file
-- delete the compressed file. 
+- transfer the file using ascp to a HSTS server & delete the source compressed file (as part of ascp)
+- delete the copied file in the /data/prefix folder.
+
 
 1. Click on the Workflow tab. You may see some workflows being used by others. DO NOT EDIT or OPEN THESE. Only work on your own workflow.   
 2. Click on 'New WorkFlow'.   
